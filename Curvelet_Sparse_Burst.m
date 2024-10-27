@@ -1,9 +1,22 @@
 function [up,FW]=Curvelet_Sparse_Burst(v,lambda)
-
+% ========================================================================
+% function [up,FW]=Curvelet_Sparse_Burst(v,lambda)
+%
+% Performs the curvelet burst algorithm based on sparse constraint.
+%
 % Inputs:
 %   v: 3D matrix containing the input sequence (the 3rd coordinate is the
 %   time)
 %   lambda: thresholding parameter
+%
+% Outputs:
+%   up: restored image
+%   FW: sequence of weights
+%
+% Jerome Gilles
+% Department of Mathematics & Statistics
+% San Diego State University
+
 
 %Curvelet decomposition of the input sequence
 Fdec=cell(size(v,3),1);

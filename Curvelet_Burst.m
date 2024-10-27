@@ -1,9 +1,22 @@
 function [up,FW]=Curvelet_Burst(v,p)
-
+% ========================================================================
+% function [up,FW]=Curvelet_Burst(v,p)
+%
+% Performs the curvelet burst algorithm.
+%
 % Inputs:
 %   v: 3D matrix containing the input sequence (the 3rd coordinate is the
 %   time)
 %   p: integer value
+%
+% Outputs:
+%   up: restored image
+%   FW: sequence of weights
+%
+% Jerome Gilles
+% Department of Mathematics & Statistics
+% San Diego State University
+
 
 %Curvelet decomposition of the input sequence
 Fdec=cell(size(v,3),1);

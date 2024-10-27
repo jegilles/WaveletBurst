@@ -1,9 +1,21 @@
 function up=Fourier_Sparse_Burst(v,lambda)
-
+% ========================================================================
+% function up=Fourier_Sparse_Burst(v,p)
+%
+% Performs the Fourier burst algorithm based on sparsity constraint.
+%
 % Inputs:
 %   v: 3D matrix containing the input sequence (the 3rd coordinate is the
 %   time)
 %   p: integer value
+%
+% Outputs:
+%   up: restored image
+%
+% Jerome Gilles
+% Department of Mathematics & Statistics
+% San Diego State University
+
 
 %compute the FFT of each frame
 Fv=cell(size(v,3),1);

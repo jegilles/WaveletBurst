@@ -1,9 +1,21 @@
 function up=Fourier_Burst(v,p)
-
+% ========================================================================
+% function up=Fourier_Burst(v,p)
+%
+% Performs the Fourier burst algorithm.
+%
 % Inputs:
 %   v: 3D matrix containing the input sequence (the 3rd coordinate is the
 %   time)
 %   p: integer value
+%
+% Outputs:
+%   up: restored image
+%
+% Jerome Gilles
+% Department of Mathematics & Statistics
+% San Diego State University
+
 
 c=zeros(size(v,1),size(v,2));
 hup=zeros(size(v,1),size(v,2));

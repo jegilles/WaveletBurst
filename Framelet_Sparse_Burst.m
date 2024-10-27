@@ -1,11 +1,24 @@
 function [up,FW]=Framelet_Sparse_Burst(v,frame,NLevel,lambda)
-
+% function [up,FW]=Framelet_Sparse_Burst(v,frame,NLevel,lambda)
+%
+% Performs the framelet burst algorithm based on sparsity constraint.
+%
 % Inputs:
 %   v: 3D matrix containing the input sequence (the 3rd coordinate is the
 %   time)
 %   frame: type of used Framelet (0=Haar, 1=Piecewise Linear
 %        Framelet, 2=Piecewise Cubic Framelet)
 %   lambda: thresholding parameter
+%   NLevel: number of multiresolution levels
+%
+% Outputs:
+%   up: restored image
+%   FW: sequence of weights
+%
+% Jerome Gilles
+% Department of Mathematics & Statistics
+% San Diego State University
+
 
 %Generation of Framelet filters
 [D,R]=GenerateFrameletFilter(frame);
